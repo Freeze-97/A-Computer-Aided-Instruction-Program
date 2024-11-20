@@ -16,6 +16,7 @@ int main() {
     printf("Enter your name: ");
     scanf("%19s", name); // %19s limits the users input to first 19 characters
     printf("Welcome, %s!\n", name);
+    srand(time(NULL));
 
     int input;
     do {
@@ -87,7 +88,7 @@ void addition(int practice) {
     } else {
         rounds = 15;
     }
-    srand(time(NULL));
+    
     while(i < rounds) {
         int a, b;
         a = rand() % 100;
@@ -133,7 +134,6 @@ void subtraction(int practice) {
     int points = 0;
 
     int i = 0;
-    srand(time(NULL));
     int rounds;
     if(practice) {
         rounds = 10;
@@ -192,7 +192,6 @@ void addition_subtraction(int practice) {
     int points = 0;
 
     int i = 0;
-    srand(time(NULL));
     int rounds;
     if(practice) {
         rounds = 10;
@@ -203,7 +202,6 @@ void addition_subtraction(int practice) {
         int rand_num = rand() % 2;
         if(rand_num) { // addition
             int a, b;
-            srand(time(NULL));
             a = rand() % 100;
             b = rand() % (100 - a); // Answer can never be above 99
             int answer;
@@ -309,7 +307,7 @@ void print_response(int correct) {
             printf("Wrong. Try once again.\n");
             break;
         case 3:
-            printf("Don’t give up!\n");
+            printf("DonÂ’t give up!\n");
             break;
         case 4:
             printf("No. Keep trying.\n");
