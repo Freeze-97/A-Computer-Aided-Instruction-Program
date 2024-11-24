@@ -1,4 +1,4 @@
-# --A-Computer-Aided-Instruction-Program
+# A Computer Aided Instruction Program
 A simple CAI program for primary school students (sothe numbers involved in the program are in the range 0…100) for the so it contains at least the following features:
 1) The user could choose to do practices, test or quit the program (main menu).
 2) For a practice -
